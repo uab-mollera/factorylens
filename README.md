@@ -1,6 +1,6 @@
 # FactoryLens
 
-**FactoryLens** is a Manufacturing Execution System (MES) and production monitoring platform that provides real-time visibility into factory floor operations. It tracks Overall Equipment Effectiveness (OEE) metrics, production losses, and machine events across your manufacturing facility.
+**FactoryLens** is a maintenance and production monitoring platform that provides real-time visibility into factory floor operations. It tracks Overall Equipment Effectiveness (OEE) metrics, production losses, and machine events across your manufacturing facility.
 
 ## What is FactoryLens?
 
