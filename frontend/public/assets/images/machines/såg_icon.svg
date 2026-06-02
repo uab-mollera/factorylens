@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Ikon: såg för stålproduktion</title>
+  <desc id="desc">Förenklad industriell bandsåg med rullbana och varmt stålämne för MES eller SCADA.</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b98a6"/>
+      <stop offset="1" stop-color="#4b5563"/>
+    </linearGradient>
+    <linearGradient id="hotSteel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="0.55" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#fed7aa"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="72" fill="#f8fafc"/>
+
+  <g filter="url(#softShadow)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Base -->
+    <rect x="72" y="352" width="368" height="46" rx="12" fill="#334155"/>
+    <rect x="92" y="330" width="328" height="34" rx="10" fill="#475569"/>
+
+    <!-- Conveyor rollers -->
+    <g fill="#94a3b8" stroke="#334155" stroke-width="8">
+      <circle cx="130" cy="347" r="18"/>
+      <circle cx="198" cy="347" r="18"/>
+      <circle cx="266" cy="347" r="18"/>
+      <circle cx="334" cy="347" r="18"/>
+      <circle cx="402" cy="347" r="18"/>
+    </g>
+
+    <!-- Hot steel billet -->
+    <rect x="142" y="285" width="246" height="46" rx="8" fill="url(#hotSteel)"/>
+    <path d="M388 285 L418 299 L418 331 L388 331 Z" fill="#fdba74"/>
+    <path d="M142 285 H388 L418 299 H170 Z" fill="#fb923c" opacity="0.7"/>
+
+    <!-- Saw body -->
+    <path d="M115 146
+             Q115 105 156 105
+             H355
+             Q397 105 397 147
+             V265
+             H337
+             V178
+             H175
+             V265
+             H115Z"
+          fill="url(#steel)" stroke="#1e293b" stroke-width="14"/>
+
+    <!-- Inner cutout -->
+    <path d="M183 184 H329 V262 H297 V216 H215 V262 H183Z" fill="#f8fafc" opacity="0.94"/>
+
+    <!-- Blade -->
+    <path d="M169 253 H343" stroke="#111827" stroke-width="12"/>
+    <path d="M185 261 L197 261 L191 272 Z
+             M217 261 L229 261 L223 272 Z
+             M249 261 L261 261 L255 272 Z
+             M281 261 L293 261 L287 272 Z
+             M313 261 L325 261 L319 272 Z"
+          fill="#111827"/>
+
+    <!-- Support columns -->
+    <g fill="#64748b" stroke="#1e293b" stroke-width="10">
+      <rect x="155" y="223" width="30" height="94" rx="8"/>
+      <rect x="327" y="223" width="30" height="94" rx="8"/>
+    </g>
+
+    <!-- Control panel -->
+    <rect x="72" y="210" width="58" height="100" rx="10" fill="#475569" stroke="#1e293b" stroke-width="10"/>
+    <rect x="86" y="225" width="30" height="24" rx="4" fill="#cbd5e1"/>
+    <circle cx="92" cy="272" r="8" fill="#22c55e"/>
+    <circle cx="113" cy="272" r="8" fill="#ef4444"/>
+    <circle cx="102" cy="294" r="8" fill="#f59e0b"/>
+
+    <!-- Warning mark -->
+    <path d="M141 143 L171 195 H111 Z" fill="#facc15" stroke="#1e293b" stroke-width="8"/>
+    <path d="M141 160 V176" stroke="#1e293b" stroke-width="6"/>
+    <circle cx="141" cy="187" r="4" fill="#1e293b"/>
+
+    <!-- Label -->
+    <text x="256" y="151" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#0f172a">SÅG</text>
+
+    <!-- Subtle coolant lines -->
+    <path d="M196 238 C190 257 190 273 181 290" stroke="#38bdf8" stroke-width="6" opacity="0.65"/>
+    <path d="M316 238 C322 257 322 273 331 290" stroke="#38bdf8" stroke-width="6" opacity="0.65"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+# Exclude node_modules at all levels
+node_modules
+**/node_modules
+
+# Frontend build artifacts
+frontend/dist
+frontend/.vite
+
+# Python caches and build artifacts
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+backend/.venv
+**/.venv
+
+# Test outputs
+backend/htmlcov
+frontend/blob-report
+frontend/test-results
+
+# Git
+.git
+.gitignore
+
+# Logs and temp files
+*.log
+/tmp

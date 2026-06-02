@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Fräsmaskin ikon</title>
+  <desc id="desc">Förenklad SVG-ikon av en CNC-fräsmaskin för MES eller SCADA-system.</desc>
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f7f8"/>
+      <stop offset="1" stop-color="#b8c2c7"/>
+    </linearGradient>
+    <linearGradient id="darkMetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#748189"/>
+      <stop offset="1" stop-color="#3d4a51"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f95c7"/>
+      <stop offset="1" stop-color="#2f6793"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#0b1f29" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .stroke{stroke:#17313b;stroke-width:12;stroke-linejoin:round;stroke-linecap:round}
+      .thin{stroke:#17313b;stroke-width:8;stroke-linejoin:round;stroke-linecap:round}
+      .dark{fill:#17313b}
+      .panel{fill:#edf2f4}
+      .metal{fill:url(#metal)}
+      .darkMetal{fill:url(#darkMetal)}
+      .blue{fill:url(#blue)}
+    </style>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <!-- Base -->
+    <rect x="88" y="407" width="336" height="50" rx="8" class="metal stroke"/>
+    <rect x="116" y="457" width="280" height="22" class="darkMetal stroke"/>
+    <rect x="127" y="481" width="34" height="16" rx="3" class="dark"/>
+    <rect x="351" y="481" width="34" height="16" rx="3" class="dark"/>
+
+    <!-- Machine frame -->
+    <path d="M117 407V158l38-38h82v74h38v-74h82l38 38v249" fill="#f7fafb" class="stroke"/>
+    <path d="M155 120h82v287h-82z" fill="#e7edef" opacity="0.72"/>
+    <path d="M275 120h82v287h-82z" fill="#e7edef" opacity="0.72"/>
+    <line x1="154" y1="201" x2="238" y2="201" class="thin"/>
+    <line x1="274" y1="201" x2="358" y2="201" class="thin"/>
+
+    <!-- Spindle assembly -->
+    <rect x="204" y="61" width="104" height="28" rx="6" class="darkMetal stroke"/>
+    <rect x="190" y="89" width="132" height="108" rx="9" class="metal stroke"/>
+    <line x1="230" y1="138" x2="282" y2="138" class="thin"/>
+    <line x1="230" y1="162" x2="282" y2="162" class="thin"/>
+    <rect x="220" y="197" width="72" height="36" class="darkMetal stroke"/>
+    <rect x="233" y="233" width="46" height="28" class="metal stroke"/>
+
+    <!-- Tool -->
+    <path d="M241 261h30v62l-15 17-15-17z" fill="#eef3f4" class="stroke"/>
+    <line x1="243" y1="286" x2="269" y2="264" class="thin"/>
+    <line x1="243" y1="314" x2="271" y2="288" class="thin"/>
+
+    <!-- Work table -->
+    <path d="M156 346h200l24 27H132z" class="metal stroke"/>
+    <line x1="178" y1="354" x2="334" y2="354" class="thin" opacity="0.55"/>
+    <line x1="160" y1="372" x2="352" y2="372" class="thin" opacity="0.55"/>
+    <rect x="144" y="373" width="224" height="34" class="darkMetal stroke"/>
+
+    <!-- Workpiece -->
+    <path d="M205 317h102v44H205z" class="blue stroke"/>
+    <path d="M245 317v18h22v-18" fill="#2f6793" class="thin"/>
+
+    <!-- Control panel -->
+    <path d="M395 185h58c12 0 21 9 21 21v147c0 12-9 21-21 21h-58c-12 0-21-9-21-21V206c0-12 9-21 21-21z" class="panel stroke"/>
+    <rect x="396" y="213" width="56" height="36" rx="4" fill="#bfe3f7" class="thin"/>
+    <g fill="#7f8b91">
+      <rect x="398" y="270" width="18" height="18" rx="2"/>
+      <rect x="425" y="270" width="18" height="18" rx="2"/>
+      <rect x="398" y="297" width="18" height="18" rx="2"/>
+      <rect x="425" y="297" width="18" height="18" rx="2"/>
+      <rect x="398" y="324" width="18" height="18" rx="2"/>
+      <rect x="425" y="324" width="18" height="18" rx="2"/>
+    </g>
+    <circle cx="399" cy="351" r="12" fill="#55b95a" class="thin"/>
+    <circle cx="424" cy="351" r="12" fill="#ffc533" class="thin"/>
+    <circle cx="449" cy="351" r="12" fill="#e84d3c" class="thin"/>
+    <path d="M424 374v33c0 16-13 29-29 29h-15" fill="none" class="thin"/>
+  </g>
+</svg>

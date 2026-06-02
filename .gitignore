@@ -1,0 +1,12 @@
+.vscode/*
+!.vscode/extensions.json
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Environment variables (contains sensitive data)
+.env
+.env.local
+.env.*.local
