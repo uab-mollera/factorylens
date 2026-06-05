@@ -19,7 +19,6 @@ Currently, the Git remote is pointing to the original template repository. You n
 Replace `YOUR_GITHUB_USERNAME` and `YOUR_REPO_NAME` with your actual values:
 
 ```bash
-cd /home/pimaster/projects/factorylens
 
 # Remove the old remote
 git remote remove origin
